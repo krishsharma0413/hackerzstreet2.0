@@ -6,3 +6,22 @@
 npx tailwindcss build -i ./static/input.css -o ./static/output.css --watch
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.landing-link{
+    @apply px-4 hover:bg-text hover:text-accent bg-accent py-2 m-2 text-text font-roboto font-bold rounded-lg ;
+}
+
+.nav-links{
+    @apply block py-2 px-3 text-text font-roboto hover:bg-accent rounded-lg;
+}
+
+.footer-link{
+    @apply  text-text font-roboto text-xl my-3 hover:text-primary;
+
+}
+
+.footer-svg{
+    @apply  text-accent rounded-full border-4 mx-0 border-primary hover:border-accent p-2 font-roboto text-xl my-3 hover:text-primary;
+
+}

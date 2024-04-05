@@ -3,13 +3,29 @@ module.exports = {
   content: [
     "./templates/*.html"
   ],
+  
   theme: {
-    extend: {
-      colors:{
-        
+    typography: {
+      DEFAULT: { 
+        css: {
+          color: "#eeeeee",
+        }
       }
     },
+    extend: {
+      colors:{
+        "primary": "#91a375",
+        "background": "#212121",
+        "text": "#eeeeee",
+        "seconday": "#121212",
+        "accent": "#76885b",
+      },
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
-
